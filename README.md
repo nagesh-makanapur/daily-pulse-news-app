@@ -10,7 +10,7 @@ Here’s how **The Daily Pulse** looks in action:
 ![image alt](https://github.com/nagesh-makanapur/daily-pulse-news-app/blob/ffb0b4af708a148040f3f7d1ebf1e8272b89971a/Snapshots/Homepage2.png)
 
 🌐 Live Demo
-  [🔗 View The Daily Pulse](https://daily-pulse-news-app.onrender.com)
+  [🔗The Daily Pulse](https://daily-pulse-news-app.onrender.com)
 
 
 📌 Features
