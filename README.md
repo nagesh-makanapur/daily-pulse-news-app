@@ -47,9 +47,6 @@ git clone https://github.com/nagesh-makanapur /daily-pulse-news-app.git
 cd daily-pulse-news-app
 2️⃣ Install dependencies
 npm install
-3️⃣ Add environment variables
-Create a .env file in the root directory:
-
 4️⃣ Start the development server
 npm run dev
 App will run at: http://localhost:5173
