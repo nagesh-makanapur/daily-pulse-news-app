@@ -1,0 +1,184 @@
+/* Grid layout for posts */
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+/* General styles */
+body {
+  font-family: "Times New Roman", serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+.App {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+/* Main headline */
+.headline {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  background: linear-gradient(to right, #f9c5d1, #9795ef);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  color: #222;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideFadeIn 1.2s ease-out forwards;
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Filter dropdowns container */
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Dropdown styling */
+.filters select {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-family: "Times New Roman", serif;
+  color: #333;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filters select:focus,
+.filters select:hover {
+  border-color: #0056b3;
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+/* News container */
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 20px;
+  min-width: 900px; /* Ensure enough width for 3 cards */
+}
+
+/* News Card styling */
+.news-card {
+  border: 2px solid #007bff;
+  border-radius: 16px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Times New Roman", serif;
+  width: 300px; /* Fixed width for consistency */
+  height: 400px; /* Fixed height for ID card effect */
+  overflow: hidden;
+  position: relative;
+}
+
+.news-card:hover {
+  transform: translateY(-10px) rotate(2deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 255, 0.2);
+}
+
+.news-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid #007bff;
+}
+
+.news-card h2 {
+  font-size: 18px;
+  margin: 15px;
+  margin-bottom: 0;
+  color: #222;
+  text-align: center;
+}
+
+.news-card p {
+  font-size: 15px;
+  color: #555;
+  margin: 10px 15px;
+  flex-grow: 1;
+  text-align: justify;
+}
+
+.news-card a {
+  display: inline-block;
+  margin: 15px;
+  margin-top: auto;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+.news-card a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .news-container {
+    min-width: 0; /* Remove min-width constraint on smaller screens */
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center;
+  }
+  .news-card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Maintain max width */
+  }
+}
+
+
+
+.app h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333333;
+  background-color: #fdf6e3;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
