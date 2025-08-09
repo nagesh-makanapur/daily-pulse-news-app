@@ -1,6 +1,9 @@
 
 📰 The Daily Pulse – News App
 A modern, responsive news application built with React (Vite) and styled for a sleek user experience. Fetches real-time news based on selected country and category.
+## 📸 App Preview
+
+Here’s how **The Daily Pulse** looks in action:
 ![image alt](https://github.com/nagesh-makanapur/daily-pulse-news-app/blob/d27cf269db42f3249ffe6e91fc2994d3484e4a87/Snapshots/Homepage.png)
 
 📌 Features
