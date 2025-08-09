@@ -12,19 +12,6 @@ A modern, responsive news application built with React (Vite) and styled for a s
 🔒 User Authentication – Register and login functionality.
 
 🎨 Gradient UI Theme – Attractive color scheme for a modern look.
-
-📂 Project Structure
-my-app/
-  ├── public/             # Static files
-  ├── src/                # Application source code
-  │   ├── components/     # Reusable UI components
-  │   ├── pages/          # Page-level components (Home, Register, Login, etc.)
-  │   ├── App.jsx         # Main app component
-  │   ├── main.jsx        # Entry point
-  ├── package.json        # Project metadata & dependencies
-  ├── vite.config.js      # Vite configuration
-  └── README.md           # Project documentation
-
   📦 Dependencies
 Main libraries used:
 
@@ -40,21 +27,29 @@ vite – Build tool & development server
 
 You can check full list in package.json.
 
-``bash
+
+``````
+**📂 Project Structure**
+my-app/
+  ├── public/             # Static files
+  ├── src/                # Application source code
+  │   ├── components/     # Reusable UI components
+  │   ├── pages/          # Page-level components (Home, Register, Login, etc.)
+  │   ├── App.jsx         # Main app component
+  │   ├── main.jsx        # Entry point
+  ├── package.json        # Project metadata & dependencies
+  ├── vite.config.js      # Vite configuration
+  └── README.md           # Project documentation
+
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
-bash
-Copy
-Edit
 git clone https://github.com/nagesh-makanapur /daily-pulse-news-app.git
 cd daily-pulse-news-app
 2️⃣ Install dependencies
-bash
 npm install
 3️⃣ Add environment variables
 Create a .env file in the root directory:
 
 4️⃣ Start the development server
-bash
 npm run dev
 App will run at: http://localhost:5173
